@@ -1,0 +1,5 @@
+(test
+ (name test)
+ (libraries alcotest alcotest-lwt dream-analytics)
+ (preprocess
+  (pps lwt_ppx)))

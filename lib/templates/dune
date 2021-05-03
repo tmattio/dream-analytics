@@ -1,0 +1,11 @@
+(rule
+ (targets layout_template.ml)
+ (deps layout_template.eml.ml)
+ (action
+  (run %{bin:dream_eml} %{deps} --workspace %{workspace_root})))
+
+(rule
+ (targets dashboard_template.ml)
+ (deps dashboard_template.eml.ml)
+ (action
+  (run %{bin:dream_eml} %{deps} --workspace %{workspace_root})))
